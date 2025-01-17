@@ -91,6 +91,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jLabel7.setText("Salario Neto");
 
+        txtSalarioBruto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSalarioBrutoActionPerformed(evt);
+            }
+        });
+
         txtSalarioNeto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSalarioNetoActionPerformed(evt);
@@ -228,6 +234,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void txtRetencionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRetencionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRetencionActionPerformed
+
+    private void txtSalarioBrutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalarioBrutoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSalarioBrutoActionPerformed
 
     /**
      * @param args the command line arguments
