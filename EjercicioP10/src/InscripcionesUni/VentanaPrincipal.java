@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package ejerciciop19;
+package InscripcionesUni;
 
 /**
  *
@@ -30,22 +30,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        txtNumeroInscripcion = new javax.swing.JTextField();
+        txtNombres = new javax.swing.JTextField();
+        txtPatrimonio = new javax.swing.JTextField();
+        txtEstratoSocial = new javax.swing.JTextField();
+        txtResultado = new javax.swing.JTextField();
         btnCalcular = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        txtLado = new javax.swing.JTextField();
-        txtArea = new javax.swing.JTextField();
-        txtHipotenusa = new javax.swing.JTextField();
-        txtPerimetro = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Lado");
+        jLabel1.setText("Numero de inscripcion");
 
-        jLabel2.setText("Area");
+        jLabel2.setText("Nombres");
 
-        jLabel3.setText("Hipotenusa");
+        jLabel3.setText("Patrimonio");
 
-        jLabel4.setText("Perimetro");
+        jLabel4.setText("Estrato social");
 
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -66,83 +67,88 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnCalcular)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnLimpiar)
-                        .addGap(0, 80, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(txtResultado)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtNumeroInscripcion)
+                                    .addComponent(txtNombres)
+                                    .addComponent(txtPatrimonio)
+                                    .addComponent(txtEstratoSocial, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtHipotenusa, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtArea, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtLado)
-                            .addComponent(txtPerimetro))))
-                .addContainerGap())
+                        .addGap(39, 39, 39)
+                        .addComponent(btnCalcular)
+                        .addGap(30, 30, 30)
+                        .addComponent(btnLimpiar)))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtLado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(txtNumeroInscripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
+                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(txtHipotenusa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPatrimonio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(txtPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                    .addComponent(txtEstratoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCalcular)
                     .addComponent(btnLimpiar))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-       int lado;
-       double area, hipotenusa, perimetro;
-       
-       //pido el unico valor que requiero
-       lado = Integer.parseInt(txtLado.getText());
-       TEquilatero triangulo = new TEquilatero(lado);
-       
-       
-       area = triangulo.calcularArea();
-       hipotenusa = triangulo.calcularHipotenusa();
-       perimetro = triangulo.calcularPerimetro();
-       
-       // esto es para que salga en los botones en el resultado
-       txtArea.setText(String.valueOf(area));
-       txtHipotenusa.setText(String.valueOf(hipotenusa));
-       txtPerimetro.setText(String.valueOf(perimetro));
-       
-       
+        // TODO add your handling code here:
+    int NumInscripcion;
+    String Nombres;
+    double Patrimonio;
+    int EstratoSocial;
+    
+    
+    NumInscripcion = Integer.parseInt(txtNumeroInscripcion.getText());
+    Nombres = txtNombres.getText();
+    Patrimonio = Double.parseDouble(txtPatrimonio.getText());
+    EstratoSocial = Integer.parseInt(txtEstratoSocial.getText());
+    
+    UniInscripcion FinalInscripcion = new UniInscripcion(NumInscripcion,Nombres,Patrimonio, EstratoSocial);
+    
+    
+    txtResultado.setText(String.valueOf(FinalInscripcion.IncrementoMatricula()));
+    
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-
-        txtArea.setText("");
-        txtLado.setText("");
-       txtHipotenusa.setText(String.valueOf(""));
-       txtPerimetro.setText(String.valueOf(""));
+        // TODO add your handling code here:
+        txtNumeroInscripcion.setText("");
+        txtNombres.setText("");
+        txtPatrimonio.setText("");
+        txtEstratoSocial.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     /**
@@ -187,9 +193,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField txtArea;
-    private javax.swing.JTextField txtHipotenusa;
-    private javax.swing.JTextField txtLado;
-    private javax.swing.JTextField txtPerimetro;
+    private javax.swing.JTextField txtEstratoSocial;
+    private javax.swing.JTextField txtNombres;
+    private javax.swing.JTextField txtNumeroInscripcion;
+    private javax.swing.JTextField txtPatrimonio;
+    private javax.swing.JTextField txtResultado;
     // End of variables declaration//GEN-END:variables
 }
